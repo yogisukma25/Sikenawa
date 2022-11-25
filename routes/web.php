@@ -15,7 +15,7 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/', function () {
-    return view('pengaduan.index');
+    return view('beranda.index');
 });
 
 Route::get('/login', [LoginController::class,'index']);

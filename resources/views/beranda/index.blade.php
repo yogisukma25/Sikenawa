@@ -17,9 +17,9 @@
             <button type="button" class="btn btn-success btn-sm mt-3">Lihat Lebih Banyak</button>
           </div>
           <div class="col text-center mt-2">
-                <div class="card mx-auto" style="width: 30rem;">
-                    <img src="https://cdn.pixabay.com/photo/2022/02/17/17/21/cows-7019167_1280.jpg" class="card-img-top" alt="...">
-                </div>
+            <div class="card mx-auto" style="width: 30rem;">
+              <img src="https://cdn.pixabay.com/photo/2022/02/17/17/21/cows-7019167_1280.jpg" class="card-img-top" alt="...">
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
