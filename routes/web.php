@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +15,7 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/', function () {
-    return view('beranda.index');
+    return view('home');
 });
 
-Route::get('/login', [LoginController::class,'index']);
+Route::get('signin', [AuthController::class,'index'])->name('authenticate');
