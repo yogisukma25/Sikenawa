@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController\AuthController;
+use App\Http\Controllers\Administrator\AuthController\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +14,16 @@ use App\Http\Controllers\AuthController\AuthController;
 |
 */
 
+// Route::get('/', function () {
+//     return view('home');
+// });
+
 Route::get('/', function () {
-    return view('home');
+    return view('admin.home.index');
 });
 
 Route::get('signin', [AuthController::class,'index'])->name('authenticate');
+
+Route::get('home', function () {
+    return view('beranda.home');
+});
