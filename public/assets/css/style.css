@@ -1759,3 +1759,18 @@ p.form-message.success, p.form-message.error {
 
 /*# sourceMappingURL=style.css.map */
 
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 140vh;
+  opacity: 90%;
+}
+
+.background-image-auth {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 90vh;
+}
+

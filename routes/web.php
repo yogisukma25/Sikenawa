@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Administrator\AuthController\AuthController;
+use App\Http\Controllers\Administrator\HomeController\HomeController;
+
+use App\Http\Controllers\HomeController\HomeController as UserHomeController;
+use App\Http\Controllers\ComplaintController\ComplaintController as UserComplaintController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +18,16 @@ use App\Http\Controllers\Administrator\AuthController\AuthController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
 
-Route::get('/', function () {
-    return view('admin.home.index');
-});
+// User Page
+Route::get('/', [UserHomeController::class,'index'])->name('home.user');
+Route::get('complaint', [UserComplaintController::class,'index'])->name('complaint.user');
 
+
+// Auth
 Route::get('signin', [AuthController::class,'index'])->name('authenticate');
 
-Route::get('home', function () {
-    return view('beranda.home');
-});
+// Admin Page
+Route::get('dashboard', [HomeController::class,'index'])->name('dashboard.admin');
+
+
