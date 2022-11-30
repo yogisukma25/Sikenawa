@@ -7,5 +7,11 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    //
+    public function index() {
+        $data = [
+            'title' => 'Akun Pengguna'
+        ];
+
+        return view('admin.user.user', $data);
+    }
 }

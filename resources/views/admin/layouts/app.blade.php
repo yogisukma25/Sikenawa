@@ -1,98 +1,77 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 
 <head>
-
-    <!--====== Required meta tags ======-->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('administrator/assets/images/favicon.png') }}">
+    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <!-- Custom CSS -->
+    <link href="{{ asset('administrator/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('administrator/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('administrator/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
+    <!-- This page plugin CSS -->
+    <link href="{{ asset('administrator/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ asset('administrator/dist/css/style.min.css') }}" rel="stylesheet">
 
-    <!--====== Title ======-->
-    <title>Sikenawa</title>
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/png">
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-
-    <!-- DataTables -->
-    {{-- <link href="{{ asset('admin/assets/plugins/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('admin/assets/plugins/datatables/buttons.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
-    <!-- Responsive datatable examples -->
-    <link href="{{ asset('admin/assets/plugins/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" /> --}}
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.css') }}">
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="{{ asset('assets/css/default.css') }}">
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
-
+<![endif]-->
 </head>
 
 <body>
-
-    <!--====== PRELOADER PART START ======-->
-
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
     <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
         </div>
     </div>
 
-    <!--====== PRELOADER ENDS START ======-->
-
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
 
     @yield('main-content')
 
-      
-<!--====== BACK TOP TOP PART START ======-->
 
-<a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
 
-<!--====== BACK TOP TOP PART ENDS ======-->
-
-
-<!--====== jquery js ======-->
-<script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
-<!--====== Bootstrap js ======-->
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-<!--====== Magnific Popup js ======-->
-<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-<!--====== Parallax js ======-->
-<script src="{{ asset('assets/js/parallax.min.js') }}"></script>
-<!--====== Counter Up js ======-->
-<script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-<!--====== Appear js ======-->
-<script src="{{ asset('assets/js/jquery.appear.min.js') }}"></script>
-<!--====== Scrolling js ======-->
-<script src="{{ asset('assets/js/scrolling-nav.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
-{{-- 
-<script src="{{ asset('admin/assets/plugins/apexcharts/apexcharts.min.js') }}"></script>
-<script src="{{ asset('admin/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js') }}"></script>
-<script src="{{ asset('admin/assets/plugins/datatables/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('admin/assets/plugins/datatables/dataTables.bootstrap4.min.js') }}"></script> --}}
-<!--====== Main js ======-->
-<script src="{{ asset('assets/js/main.js') }}"></script>
-
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="{{ asset('administrator/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="{{ asset('administrator/dist/js/app-style-switcher.js') }}"></script>
+    <script src="{{ asset('administrator/dist/js/feather.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js') }}"></script>
+    <script src="{{ asset('administrator/dist/js/sidebarmenu.js') }}"></script>
+    <!--Custom JavaScript -->
+    <script src="{{ asset('administrator/dist/js/custom.min.js') }}"></script>
+    <!--This page plugins -->
+    <script src="{{ asset('administrator/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('administrator/dist/js/pages/datatable/datatable-basic.init.js') }}"></script>
+    <!--This page JavaScript -->
+    <script src="{{ asset('administrator/assets/extra-libs/c3/d3.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/extra-libs/c3/c3.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/libs/chartist/dist/chartist.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js') }}"></script>
+    <script src="{{ asset('administrator/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js') }}"></script>
+    <script src="{{ asset('administrator/dist/js/pages/dashboards/dashboard1.min.js') }}"></script>
 </body>
+
 </html>
