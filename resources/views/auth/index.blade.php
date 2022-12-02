@@ -35,14 +35,15 @@
                                 </div> <!--end auth-logo-text-->  
 
                                 
-                                <form class="form-horizontal auth-form my-4" action="">
+                                <form class="form-horizontal auth-form my-4" action="{{route('dashboard.admin')}}" method="get">
+                                    @csrf
                                     <div class="form-group">
-                                        <label for="username">Username</label>
+                                        <label for="email">Email</label>
                                         <div class="input-group mb-3">
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-user"></i> 
                                             </span>                                                                                                              
-                                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
@@ -52,7 +53,7 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-lock"></i> 
                                             </span>                                                       
-                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password" name="password">
                                         </div>                               
                                     </div><!--end form-group--> 
 
@@ -79,7 +80,7 @@
             </div><!--end col-->           
         </div><!--end row-->
     </div>
-    <!-- End Log In page -->)
+    <!-- End Log In page -->
 </div>
 
 @endsection

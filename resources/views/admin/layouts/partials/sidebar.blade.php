@@ -9,7 +9,7 @@
       <nav class="sidebar-nav">
           <ul id="sidebarnav">
               <li class="sidebar-item"> 
-                <a class="sidebar-link sidebar-link" href="{{ route('dashboard.admin')}}" aria-expanded="false">
+                <a class="sidebar-link sidebar-link" href="{{route('dashboard.admin')}}" aria-expanded="false">
                   <i class="fas fa-home feather-icon"></i>
                   <span class="hide-menu">Dashboard</span>
                 </a>
