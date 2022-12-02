@@ -48,7 +48,7 @@ class ComplaintController extends Controller
             'name', 'nomer', 'email','alamat','keterangan'
         ]);
         $complaint = Complaint::create($array);
-        return redirect()->route('home.user')
+        return redirect()->route('status.user')
             ->with('success_message', 'Berhasil mengirim Pengaduan');
     }
 

@@ -8,7 +8,7 @@ use App\Http\Controllers\Administrator\HomeController\HomeController;
 use App\Http\Controllers\Administrator\UsersController\UsersController;
 use App\Http\Controllers\Administrator\ReportController\ReportController;
 use App\Http\Controllers\Administrator\MapDataController\MapDataController;
-
+use App\Http\Controllers\StatusController\StatusController as UserStatusController;
 use App\Http\Controllers\HomeController\HomeController as UserHomeController;
 use App\Http\Controllers\Administrator\NotificationsController\NotificationsController;
 use App\Http\Controllers\ComplaintController\ComplaintController as UserComplaintController;
@@ -29,6 +29,7 @@ use App\Http\Controllers\ComplaintController\ComplaintController as UserComplain
 Route::get('/', [UserHomeController::class,'index'])->name('home.user');
 //Route::get('complaint', [UserComplaintController::class,'index'])->name('complaint.user');
 Route::resource('complaints', ComplaintController::class);
+Route::get('status', [UserStatusController::class,'index'])->name('status.user');
 
 
 // Auth

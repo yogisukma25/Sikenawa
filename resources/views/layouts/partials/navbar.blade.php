@@ -13,7 +13,7 @@
         <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="page-scroll" href="{{ route('home.user')}}">Home</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('complaints.store')}}">Pengaduan</a></li>
-            <li class="nav-item"><a class="page-scroll" href="#work">Status</a></li>
+            <li class="nav-item"><a class="page-scroll" href="{{ route('status.user')}}">Status</a></li>
             <li class="nav-item"><a class="page-scroll" href="#service">Peta Penyakit</a></li>
         </ul>
         <div class="m-lauto">
