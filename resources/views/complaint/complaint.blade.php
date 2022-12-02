@@ -32,40 +32,40 @@
                                 </div> <!--end auth-logo-text-->  
     
                                 
-                                <form class="form-horizontal auth-form my-4" action="">
-
+                                <form class="form-horizontal auth-form my-4" action="{{route('complaints.store')}}" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="username">Nama</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Nama" required>
+                                            <input type="text" class="form-control" id="username" placeholder="Masukan Nama" name="name" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
                                         <label for="username">Lokasi</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Lokasi" required>
+                                            <input type="text" class="form-control" id="username" placeholder="Masukan Lokasi" name="lokasi" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
                                         <label for="username">Email</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Email" required>
+                                            <input type="text" class="form-control" id="username" placeholder="Masukan Email" name="email" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
                                         <label for="username">Alamat</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Alamat" required>
+                                            <input type="text" class="form-control" id="username" placeholder="Masukan Alamat" name="alamat" required>
                                         </div>                                    
                                     </div><!--end form-group-->
 
                                     <div class="form-group">
                                         <label for="username">Keterangan</label>
                                         <div class="input-group mb-3">
-                                            <textarea type="text" class="form-control" id="username" placeholder="Enter username" required rows="5"> </textarea>
+                                            <textarea type="text" class="form-control" id="username" placeholder="Enter username" name="keterangan" required rows="5"> </textarea>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
