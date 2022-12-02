@@ -39,13 +39,13 @@ class ComplaintController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'lokasi' => 'required',
+            'nomer' => 'required',
             'email' => 'required',
             'alamat' => 'required',
             'keterangan' => 'required',
         ]);
         $array = $request->only([
-            'name', 'lokasi', 'email','alamat','keterangan'
+            'name', 'nomer', 'email','alamat','keterangan'
         ]);
         $complaint = Complaint::create($array);
         return redirect()->route('home.user')

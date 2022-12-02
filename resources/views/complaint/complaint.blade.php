@@ -42,30 +42,30 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="username">Lokasi</label>
+                                        <label for="nomer">Nomer Hp</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Lokasi" name="lokasi" required>
+                                            <input type="text" class="form-control" id="nomer" placeholder="Masukan Nomer Hp" name="nomer" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="username">Email</label>
+                                        <label for="email">Email</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Email" name="email" required>
+                                            <input type="email" class="form-control" id="email" placeholder="Masukan Email" name="email" required>
                                         </div>                                    
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="username">Alamat</label>
+                                        <label for="Alamat">Alamat</label>
                                         <div class="input-group mb-3">                                                                                                             
-                                            <input type="text" class="form-control" id="username" placeholder="Masukan Alamat" name="alamat" required>
+                                            <input type="text" class="form-control" id="Alamat" placeholder="Masukan Alamat" name="alamat" required>
                                         </div>                                    
                                     </div><!--end form-group-->
 
                                     <div class="form-group">
-                                        <label for="username">Keterangan</label>
+                                        <label for="keterangan">Keterangan</label>
                                         <div class="input-group mb-3">
-                                            <textarea type="text" class="form-control" id="username" placeholder="Enter username" name="keterangan" required rows="5"> </textarea>
+                                            <textarea type="text" class="form-control" id="keterangan" placeholder="isi aduan" name="keterangan" required rows="5"> </textarea>
                                         </div>                                    
                                     </div><!--end form-group--> 
 

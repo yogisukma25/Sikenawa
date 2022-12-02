@@ -16,7 +16,7 @@ class CreateComplaintTable extends Migration
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('lokasi');
+            $table->string('nomer');
             $table->string('email');
             $table->string('alamat');
             $table->string('keterangan');

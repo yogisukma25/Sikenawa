@@ -10,7 +10,7 @@ class Complaint extends Model
     use HasFactory;
     protected $fillable = [
         'name',
-        'lokasi',
+        'nomer',
         'email',
         'alamat',
         'keterangan',
