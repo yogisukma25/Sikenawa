@@ -1763,7 +1763,7 @@ p.form-message.success, p.form-message.error {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 140vh;
+  height: 160vh;
   opacity: 90%;
 }
 

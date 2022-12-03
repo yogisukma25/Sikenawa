@@ -15,4 +15,12 @@ class ReportController extends Controller
 
         return view('admin.report.report', $data);
     }
+
+    public function view_report() {
+        $data = [
+            'title' => 'Balasan Pengaduan'
+        ];
+
+    return view('admin.report.view-report', $data);
+    }
 }

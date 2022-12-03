@@ -12,16 +12,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="page-scroll" href="{{ route('home.user')}}">Home</a></li>
-            <li class="nav-item"><a class="page-scroll" href="#service">Peta Penyakit</a></li>
-            <li class="nav-item"><a class="page-scroll" href="#work">Status</a></li>
+            <li class="nav-item"><a class="page-scroll" href="{{ route('disease-map.user')}}">Peta Penyakit</a></li>
+            <li class="nav-item"><a class="page-scroll" href="{{ route('status.user')}}">Status</a></li>
             <li class="nav-item"><a class="page-scroll" href="{{ route('complaint.user')}}">Pengaduan</a></li>
         </ul>
         <div class="m-lauto">
             <a href="{{ route('authenticate') }}">
                 <div class="btn btn-success btn-sm"> Masuk</div>
             </a>
-            <div class="btn btn-primary btn-sm">Pusat Bantuan</div>
+            <div class="btn btn-primary btn-sm modalMd" data-toggle="modal" data-target="#modalMd">Pusat Bantuan</div>
             
         </div>
     </div> <!-- navbar collapse -->
 </nav> <!-- navbar -->
+

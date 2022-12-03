@@ -133,7 +133,7 @@
     <!--====== CALL TO ACTION PART ENDS ======-->
 
 
-    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+    <section id="contact" class="contact-area pt-125 pb-30 gray-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -143,39 +143,40 @@
                     </div> <!-- section title -->
                 </div>
             </div> 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
-                            <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div> <!-- single form -->
-                            <p class="form-message"></p>
-                            <div class="single-form">
-                                <button class="main-btn" type="submit">Send Message</button>
-                            </div> <!-- single form -->
-                        </form>
-                    </div> <!-- contact form -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-map mt-60">
+            <div class="row pt-50 pb-150">
+                <div class="col-lg-8">
+                    <div class="contact-map mt-20">
                         <div class="gmap_canvas">                            
-                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31584.56354412436!2d114.31042168516441!3d-8.295788829210888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd156d7d86bef9b%3A0x4cb09a70b9109740!2sPoliteknik%20Negeri%20Banyuwangi!5e0!3m2!1sid!2sid!4v1670033853615!5m2!1sid!2sid" width="600" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div> <!-- contact map -->
                 </div>
-            </div> <!-- row -->
+                <div class="col-lg-4" >
+                  <div class="contact-form pt-20">
+                    <div class="auth-page">
+                      <div class="card auth-card shadow-lg" style="height: 340px">
+                          <div class="card-body">
+                              <div class="px-3">
+                                <h5 class="text-center">Keterangan</h5>
+                                <p class="mt-4 text-dark">Kecamatan Songgon</p>
+                                <p class="text-small text-dark px-2"><i class="fa fa-circle fa-solid fa-2xs px-2"> </i><small> Zona Merah</small></p>
+                                <p class="text-small text-dark px-2"><i class="fa fa-circle fa-solid fa-2xs px-2"> </i><small> 30 Kasus</small></p>
+                              </div><!--end /div-->
+                          </div><!--end card-body-->
+                      </div><!--end card-->
+                    </div><!--end auth-page-->
+                  </div> <!-- contact form -->
+                </div>
+              </div> <!-- row -->
         </div> <!-- container -->
     </section>
 
     
     <!--====== CONTACT PART ENDS ======-->
+
+
+    <!-- Modal -->
+
 
     @include('layouts.partials.footer')
 

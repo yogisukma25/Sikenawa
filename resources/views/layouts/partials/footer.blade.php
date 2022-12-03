@@ -1,7 +1,7 @@
 <!--====== FOOTER PART START ======-->
 
 <footer id="footer" class="footer-area fixed-bottom">
-    <div class="footer-copyright pb-20">
+    <div class="footer-copyright pb-1   0">
       <div class="container">
           <div class="row">
               <div class="col-lg-12">

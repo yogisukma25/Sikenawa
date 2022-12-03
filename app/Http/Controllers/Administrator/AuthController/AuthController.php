@@ -9,9 +9,17 @@ class AuthController extends Controller
 {
     public function index() {
         $data = [
-            'title' => 'Sign In',
+            'title' => 'Login',
         ];
 
         return view('auth.index', $data);
+    }
+
+    public function register() {
+        $data = [
+            'title' => 'Daftar',
+        ];
+
+        return view('auth.register', $data);
     }
 }

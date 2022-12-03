@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('administrator/assets/images/favicon.png') }}">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/logo/logo.jpeg') }}">
+    <title>Sikenawa</title>
     <!-- Custom CSS -->
     <link href="{{ asset('administrator/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
     <link href="{{ asset('administrator/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">

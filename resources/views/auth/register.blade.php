@@ -28,16 +28,16 @@
                 <div class="auth-page">
                     <div class="card auth-card shadow-lg">
                         <div class="card-body">
-                            <div class="px-3">
+                            <div class="px-2">
                                 
                                 <div class="text-center auth-logo-text">
-                                    <p class="text-muted mb-0">Sign in</p>  
+                                    <p class="text-dark mb-0"> <b> Daftar </b></p>  
                                 </div> <!--end auth-logo-text-->  
 
                                 
                                 <form class="form-horizontal auth-form my-4" action="">
                                     <div class="form-group">
-                                        <label for="username">Email</label>
+                                        <label for="email">Email</label>
                                         <div class="input-group mb-3">
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-user"></i> 
@@ -47,7 +47,17 @@
                                     </div><!--end form-group--> 
 
                                     <div class="form-group">
-                                        <label for="userpassword">Password</label>                                            
+                                        <label for="userpassword">Kata Sandi</label>                                            
+                                        <div class="input-group mb-3"> 
+                                            <span class="auth-form-icon">
+                                                <i class="dripicons-lock"></i> 
+                                            </span>                                                       
+                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                        </div>                               
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group">
+                                        <label for="userpassword">Ulangi Kata Sandi</label>                                            
                                         <div class="input-group mb-3"> 
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-lock"></i> 
@@ -56,21 +66,12 @@
                                         </div>                               
                                     </div><!--end form-group--> 
 
-                                    <div class="form-group row mt-4">
-                                        <div class="col-sm-6">
-                                            <div class="custom-control custom-switch switch-success">
-                                                <input type="checkbox" class="custom-control-input" id="customSwitchSuccess">
-                                                <label class="custom-control-label text-muted" for="customSwitchSuccess">Remember me</label>
-                                            </div>
-                                        </div><!--end col--> 
-                                    </div><!--end form-group--> 
-
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" type="submit">Masuk <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            <button class="btn btn-success btn-round btn-block waves-effect waves-light" type="submit">Daftar <i class="fas fa-sign-in-alt ml-1"></i></button>
                                         </div><!--end col--> 
                                     </div> <!--end form-group-->                           
-                                    <p class="text-center mt-4"> <small> Tidak Punya Akun? <a href="{{ route('register')}}" class="text-success">Daftar</a> </small> </p>
+                                    <p class="text-center mt-4"> <small> Sudah Punya Akun? <a href="{{ route('authenticate')}}" class="text-success">Masuk</a> </small> </p>
                                 </form><!--end form-->
 
                             </div><!--end /div-->
